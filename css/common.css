@@ -11,6 +11,18 @@
 .eng {
   font-family: 'Pretendard', sans-serif;
 }
+.loft {
+  font-weight: 900;
+}
+.logo .loft {
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+.logo .top {
+  font-size: 28px;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
 
 /* main */
 .main {
@@ -90,6 +102,12 @@
 .main .img-box .inner-box .left p span {
   font-size: 1.8rem;
 }
+.main .img-box .inner-box .right {
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #EBEBEB;
+}
 
 /* section01 */
 .section01 .brand-story {
@@ -130,7 +148,10 @@
   background-size: cover;
   position: relative;
 }
-.section01 .brand-story .img-box img {
+.section01 .brand-story .img-box .float {
+  font-size: 65px;
+  font-weight: 900;
+  line-height: .8;
   position: absolute;
   top: 17px;
   right: 54px;
@@ -216,6 +237,15 @@
   padding: 4rem 2.8rem 3.2rem;
   border: 1px solid #ebebeb;
 }
+.brand-identity .bottom-box .identity-img .logo-img .logo {
+  font-size: 70px;
+  font-weight: 900;
+}
+.brand-identity .bottom-box .identity-img .symbol-img .logo {
+  font-size: 90px;
+  line-height: .8;
+  font-weight: 900;
+}
 .brand-identity .bottom-box .identity-img .mo-name {
   display: none;
   font-size: 1.8rem;
@@ -225,27 +255,45 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  gap: 12px;
   width: 350px;
 }
 .brand-identity .bottom-box .identity-img .variation-img .top {
   align-self: flex-start;
+  font-weight: 900;
+  font-size: 65px;
 }
 .brand-identity .bottom-box .identity-img .variation-img .bottom {
   align-self: flex-end;
+  font-weight: 900;
+  font-size: 65px;
+  display: flex;
+  align-items: center;
 }
 .identity-img .variation-img .bottom span {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 146px;
   height: 45px;
-  background-image: url(/images/lifestyle.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  border-radius: 25px;
+  background-color: #231916;
+  color: var(--white);
+  overflow: hidden;
+  position: relative;
   animation: change 8s steps(1, start) infinite;
+}
+.identity-img .variation-img .bottom span::after {
+  content: 'LIFESTYLE';
+  color: var(--white);
+  font-size: 23px;
+  font-weight: 900;
+  font-family: 'Pretendard';
+  position: absolute;
+  animation: change2 8s steps(1, start) infinite;
 }
 @keyframes change {
   0% {
-    background-image: url(/images/lifestyle.png);
+    background-color: #231916;
     opacity: 1;
   }
   23% {
@@ -256,7 +304,7 @@
   }
   25% {
     opacity: 1;
-    background-image: url(/images/artistc.png);
+    background-color: #595857;
   }
   48% {
     opacity: 1;
@@ -266,7 +314,7 @@
   }
   50% {
     opacity: 1;
-    background-image: url(/images/urbany.png);
+    background-color: #181D61;
   }
   73% {
     opacity: 1;
@@ -276,7 +324,49 @@
   }
   75% {
     opacity: 1;
-    background-image: url(/images/compact.png);
+    background-color: #006935;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+@keyframes change2 {
+  0% {
+    content: 'LIFESTYLE';
+    opacity: 1;
+  }
+  23% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    content: 'ARTISTC';
+  }
+  48% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: 'URBANY';
+  }
+  73% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    content: 'COMPACT';
   }
   98% {
     opacity: 1;
@@ -310,6 +400,13 @@
 .section02 .bottom-box .logo-box {
   margin-bottom: 2.1rem;
 }
+.section02 .bottom-box .logo-box .top {
+  font-weight: 900;
+  font-size: 40px;
+}
+.section02 .bottom-box .logo-box .bottom {
+  font-size: 14px;
+}
 .section02 .bottom-box p {
   font-size: 1.6rem;
 }
@@ -317,9 +414,6 @@
 /* section03 */
 .section03 {
   padding-top: 5.5rem;
-}
-.section03 .inner {
-  border-bottom: var(--border);
 }
 .section03 h2 {
   margin-bottom: 5.6rem;
@@ -343,6 +437,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.section03 .main-txt .logo-box .top {
+  font-weight: 900;
+  font-size: 35px;
+  line-height: .8;
+}
+.section03 .main-txt .logo-box .bottom {
+  font-size: 11px;
+  margin-bottom: 7px;
+}
 .section03 .main-txt .txt {
   font-size: 1.8rem;
 }
@@ -352,6 +455,9 @@
   padding: 4rem 5rem;
   border-top: var(--border);
 }
+.section03 .housing-box05 {
+  border-bottom: var(--border);
+}
 .section03 .housing-box .txt-box {
   display: flex;
   flex-direction: column;
@@ -360,6 +466,13 @@
 }
 .section03 .housing-box .txt-box .logo-box {
   margin-bottom: 1.2rem;
+}
+.section03 .housing-box .txt-box .logo-box .top {
+  font-weight: 900;
+  font-size: 30px;
+}
+.section03 .housing-box .txt-box .logo-box .bottom {
+  font-size: 10px;
 }
 .section03 .housing-box .txt-box p {
   margin-bottom: 5rem;
@@ -429,7 +542,10 @@ footer {
   border-bottom: var(--border);
 }
 .footer-top .foot-symbol {
-  margin-bottom: 2.2rem;
+  font-weight: 900;
+  font-size: 12rem;
+  line-height: .8;
+  margin: 0 auto 2.2rem;
 }
 .footer-top p {
   font-size: 1.8rem;
