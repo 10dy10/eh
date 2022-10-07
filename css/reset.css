@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import url('/css/font.css');
+
+:root {
+  /* --main-color: #; */
+  --white: #fff;
+  --border-color: #808080;
+  --border: .25px solid var(--border-color);
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+address,
+cite,
+code,
+del,
+em,
+img,
+ins,
+q,
+s,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section,
+mark,
+audio,
+video {
+  font-family: "Pretendard", "KoPubDotum", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+  font-family: "Pretendard", "KoPubDotum", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: .5rem;
+  color: var(--text-color);
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-family: "Pretendard", "KoPubDotum", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  -webkit-text-size-adjust: none;
+  text-align: center;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: "Pretendard", "KoPubDotum", sans-serif;
+  margin: 0 auto;
+  font-weight: 400;
+  color: var(--text-color);
+  background: #fff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus,
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="(주)이한종합건설">
+  <meta property="og:description" content="공간이 공감이 되는 곳 집을 그리다. 이한종합건설">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+
+  <title>공간이 공감이 되는 곳 집을 그리다 - 이한종합건설 EHAN</title>
+</head>
+<body>
+
+  <header>
+    <div class="left">
+      <img src="/images/ehan-logo.png" alt="로고" />
+    </div>
+    <div class="center">
+      <img src="/images/sub-logo.png" alt="로고" />
+    </div>
+    <div class="ham-btn">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </header>
+
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer-top">
+        <img src="/images/symbol.png" alt="symbol" class="foot-symbol"/>
+        <p>주거문화 발전을 위한 고민은 계속 됩니다.</p>
+        <a class="top-btn" href="#home">
+          <img src="/images/top-btn.png" alt="위로" />
+          <p>맨 위 화면</p>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <div class="ehan-symbol">
+          <img src="/images/ehan-sym2.png" alt="">
+        </div>
+        <div>
+          사업자명: 이한종합건설(주)     |     사업자등록증: 111-22-33333     |     대표자: 정경모     |     문의: 031-333-4444<br>
+          본 사이트에 사용된 CG 및 이미지 등은 소비자의 이해를 돕기 위한 것으로 실제와 다르 수 있습니다.<br>
+          이한종합건설(주) All rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    window.addEventListener('scroll', function(){
+      let scroll = window.scrollY
+      // console.log(scroll)
+
+      const moveTxt = document.querySelectorAll('.move-txt')
+      if( scroll > 110) {
+        moveTxt[0].classList.add('move')
+        moveTxt[1].classList.add('move')
+      }
+    })
+
+  </script>
+
+</body>
+</html>
