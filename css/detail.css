@@ -1,0 +1,222 @@
+img {
+  width: 100%;
+}
+
+header {
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+header .logo .top {
+  font-weight: 900;
+  font-size: 6rem;
+  letter-spacing: -1px;
+}
+
+.sec-wrap {
+  padding-top: 3rem;
+  padding-bottom: 5.4rem;
+  border-bottom: var(--border);
+}
+.sec-tit {
+  font-weight: 500;
+  font-size: 6rem;
+}
+
+.sel-box {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 1.6rem;
+  border-bottom: 1.8px solid #000;
+}
+.sel-box form {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.sel-box form label {
+  color: #B3B3B3;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.sel-box form select {
+  width: 20rem;
+  border: 0;
+  font-weight: 500;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.detail-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 2rem;
+}
+.detail-summary .left-txt {
+  width: 50%;
+  padding-left: 8.4rem;
+  text-align: left;
+}
+.detail-summary .left-txt h4 {
+  margin-bottom: 2.6rem;
+  font-size: 3rem;
+}
+.detail-summary .left-txt ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.detail-summary .left-txt ul li {
+  display: flex;
+}
+.detail-summary .left-txt ul li .tit {
+  width: 13.2rem;
+  font-weight: 500;
+}
+.detail-summary .right-img img {
+  width: 54.7rem;
+}
+
+.detail-feature .sub-txt {
+  margin-top: .5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.detail-feature .img-wrap .top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+}
+.detail-feature .img-wrap .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-feature .img-wrap .bottom .img-box {
+  width: calc((100% - 1.2rem) / 2);
+}
+.yeosu .detail-feature .img-wrap {
+  display: flex;  
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.yeosu .detail-feature .img-wrap > div {
+  width: 48%;
+}
+.yeosu .detail-feature .img-wrap .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-stages .sec-tit {
+  margin-bottom: 2.5rem;
+}
+.detail-stages .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.8rem;
+  font-weight: 400;
+}
+.detail-stages .top p:first-child {
+  font-size: 2.2rem;
+}
+.detail-stages .top p:last-child {
+  font-size: 1.8rem;
+  color: #999999;
+}
+.detail-stages .bar {
+  width: 100%;
+  height: 11px;
+  background-color: #eed8c3;
+  border-radius: 5.5px;
+  margin-bottom: 4rem;
+}
+.detail-stages .bar p {
+  width: 16.87%;
+  height: 100%;
+  background-color: #5c3918;
+  border-radius: 5.5px;
+}
+.magok .detail-stages .bar p {
+  width: 100%;
+}
+.detail-stages .step-box {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-stages .step-box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19.2rem;
+  height: 155px;
+  border: 1px solid #CCCCCC;
+  font-size: 1.8;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.detail-stages .step-box > div:first-child {
+  background-color: #eed8c3;
+}
+.detail-stages .step-box > div:nth-child(2) {
+  background-color: #5c3918;
+  color: var(--white);
+}
+.magok .detail-stages .step-box > div:first-child {
+  background-color: #eed8c3;
+  color: #000;
+}
+.magok .detail-stages .step-box > div:nth-child(2) {
+  background-color: #e0bd9c;
+  color: #000;
+}
+.magok .detail-stages .step-box > div:nth-child(3) {
+  background-color: #ca9e75;
+  color: var(--white);
+}
+.magok .detail-stages .step-box > div:nth-child(4) {
+  background-color: #aa7a4d;
+  color: var(--white);
+}
+.magok .detail-stages .step-box > div:nth-child(5) {
+  background-color: #7c522a;
+  color: var(--white);
+}
+.magok .detail-stages .step-box > div:nth-child(6) {
+  background-color: #5c3918;
+  color: var(--white);
+}
+
+.detail-site .sec-tit {
+  margin-bottom: 2.5rem;
+}
+.detail-site .img-wrap {
+  margin-bottom: 3rem;
+}
+.detail-site .img-wrap img {
+  width: auto;
+  width: 100%;
+}
+
+.detail-loca .sec-tit {
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .detail-summary .left-txt {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .sec-tit {
+    font-size: 5rem;
+  }
+  .detail-summary .right-img img {
+    width: 100%;
+  }  
+}
